@@ -1,6 +1,6 @@
 var React = require('react'),
     ReactRouter = require('react-router'),
-    HashHistory = require('react-router/lib/hashhistory'),
+    HashHistory = require('react-router/lib/HashHistory'),
     Router = ReactRouter.Router,
     Route = ReactRouter.Route,
     Main = require('./components/main');

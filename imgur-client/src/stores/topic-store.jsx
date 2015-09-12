@@ -1,4 +1,4 @@
-var Api = require('./utils/api'),
+var Api = require('../utils/api'),
     Reflux = require('reflux'),
     Actions = require('../actions');
 
