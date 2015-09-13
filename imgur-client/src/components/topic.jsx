@@ -1,7 +1,8 @@
 var React = require('react'),
     Actions = require('../actions'),
     ImageStore = require('../stores/image-store'),
-    Reflux = require('reflux');
+    Reflux = require('reflux'),
+    ImagePreview = require('./image-preview');
 
 
 module.exports = React.createClass({
@@ -20,15 +21,13 @@ module.exports = React.createClass({
         Actions.getImages(nextProps.params.id);
     },
     render: function(){
-       return <div className="images-grid">
+       return <div className="topic">
            {this.renderImages()}
            </div>
     },
     renderImages: function(){
-        return this.state.images.map(function(image) {
-            return <div>
-                <img src={image.link} />
-                </div>
+        return this.state.images.slice(0,20).map(function(image) {
+            return <ImagePreview key={image.id} {...image} />
         });
     },
     onChange: function(event, images){

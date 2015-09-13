@@ -9,3 +9,49 @@
 .images-grid img{
   max-width: 400px;
 }
+
+.image-preview{
+  border: 1px solid #eee;
+  display: inline-block;
+  height: 206px;
+  padding: 3px;
+  position: relative;
+  text-align: center;
+  width: 206px;
+  img{
+    height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  video{
+    background-color: #000;
+    height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  .glyphicon{
+    color: #fff;
+    font-size: 50px;
+    left: 50%;
+    opacity: .5;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+  .inset{
+    background-color: #000;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    opacity: .8;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.topic{
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
