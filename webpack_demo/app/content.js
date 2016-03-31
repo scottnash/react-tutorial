@@ -1,6 +1,10 @@
 require("./scss/header.scss")
 
 module.exports = {
-    text: "It works from content.js.",
+    returnText: function(){
+        let text = "It works.";
+        return text;
+    }
+
 
 };

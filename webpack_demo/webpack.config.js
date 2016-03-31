@@ -5,7 +5,7 @@ var path = require('path'),
 module.exports = {
     entry: './app/entry.js',
     output: {
-        path: path.resolve('./build'),
+        path: './build',
         publicPath: '/build/',
         filename: 'bundle.js'
     },
@@ -20,7 +20,7 @@ module.exports = {
                 exclude: /(node_modules)/,
                 loader: 'babel',
                 query: {
-                    presets: ['es2015']
+                    presets: ['es2015','react']
                 }
             }
         ]
