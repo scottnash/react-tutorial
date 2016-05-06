@@ -1,5 +1,5 @@
 require("./scss/main.scss");
-import RSS from "../lib/rss.js";
+import RSS from "../helpers/rss.js";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FeedItem from './feedItem.js';
