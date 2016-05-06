@@ -18,11 +18,11 @@ let BoxOfficeFeed = React.createClass({
     },
     render: function () {
         return (
-            <div>
+            <ul>
                 {this.state.feed.entries.map(function (entry, i) {
                     return <FeedItem key={i} entry={entry} />
                 })}
-            </div>
+            </ul>
         );
     }
 });
